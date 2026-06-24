@@ -11,12 +11,34 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 ## [No publicado]
 
 ### Por hacer
-- Poblar las capas 02 (tipografía/iconos), 04 (componentes), 06 (accesibilidad) y 07 (gobernanza) (fases 3–5).
+- Poblar las capas 04 (componentes) y 07 (gobernanza) (fases 4–5).
+- Poblar `02_identidad-visual/iconos/` con los `.svg` y añadir el `.otf` de Space Grotesk.
 - Implementar los generadores en `scripts/generators/` y el comando `npm run build`.
 - Confirmar contra el Manual de Identidad los valores provisionales de la
   submarca Tienda FUCAI (terracota y ocre) en `03_tokens/temas/tienda-fucai.json`.
 - Resolver los marcadores `> [Pendiente: …]` de la capa estratégica (misión,
   visión, valores, arquetipo, posicionamiento formal) con dirección.
+
+## [0.3.0] — 2026-06-24
+
+### Añadido
+- **Identidad visual (`02_identidad-visual/`)**: `logo/manual-de-logo.md`,
+  `color.md`, `tipografia.md`, `espaciado-y-layout.md`, `iconografia.md`,
+  `fotografia.md`, `ilustracion.md`, `forma-y-profundidad.md`, `movimiento.md`.
+  Las tablas de valores se marcan `<!-- [GEN] derivado de tokens.json -->` y se
+  rellenan con los tokens vigentes (no se quemaron HEX/tamaños a mano fuera de ellas).
+- **Fuentes Space Grotesk** en `02_identidad-visual/tipografia/` (Git LFS):
+  `SpaceGrotesk-{Regular,Medium,Bold}.ttf` (escritorio) + `.woff2` latin y
+  latin-ext (web), con `FUENTES.md` de procedencia y licencia OFL.
+- **Accesibilidad (`06_accesibilidad/`)**: `estandar-accesibilidad.md`
+  (WCAG 2.2 AA, contraste cruzado con tokens) y `lenguaje-inclusivo.md`
+  (eje ético: comunidades protagonistas).
+- `*.ttf` añadido a las reglas de Git LFS en `.gitattributes`.
+
+### Nota
+- Los `.otf` originales de Space Grotesk no se descargaron: el entorno bloquea
+  `raw.githubusercontent.com`. Se entregan `.ttf`/`.woff2` auténticos desde la
+  distribución de Google Fonts; el `.otf` queda como `[Pendiente]` con instrucciones.
 
 ## [0.2.0] — 2026-06-24
 
