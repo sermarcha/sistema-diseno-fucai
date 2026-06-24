@@ -29,5 +29,6 @@
 
 ## Tokens
 
-`brand.primary`, `text.onColor`, `accent.soft`. Radio 4 px:
-> [Pendiente: tokenizar el radio (`radius.*`) en `tokens.json` — ver `02_identidad-visual/forma-y-profundidad.md`.]
+`brand.primary`, `text.onColor`, `accent.soft`, `radius.sm` (4 px),
+`motion.duration.fast` + `motion.easing.standard` (transición de hover/foco).
+Detalle en `02_identidad-visual/forma-y-profundidad.md` y `movimiento.md`.

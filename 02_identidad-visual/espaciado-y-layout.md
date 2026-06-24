@@ -55,5 +55,6 @@ barra arena al pie, máx. 6 líneas) → dato/cita → divisoria de sección →
 - **Botones:** radio 4 px (`skill/fucai-branding/references/web.md`).
 
 > [Pendiente: tokenizar la grilla de columnas, anchos de contenedor y breakpoints
-> responsive (móvil/tablet/escritorio) para web/AppSheet, y el radio de 4 px. El
-> skill no los define como sistema; deben crearse como tokens en una fase futura.]
+> responsive (móvil/tablet/escritorio) para web/AppSheet. El skill no los define
+> como sistema; deben crearse como tokens en una fase futura. (El radio de borde ya
+> está tokenizado en `radius.*`; ver `forma-y-profundidad.md`.)]

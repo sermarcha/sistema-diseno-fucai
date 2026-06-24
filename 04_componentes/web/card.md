@@ -30,5 +30,7 @@ Agrupación por espacio en blanco, no por bordes pesados.
 
 ## Tokens
 
-`surface.page.web`, `brand.primary`, `text.body`, `text.heading`, `accent.soft`.
-> [Pendiente: tokenizar radio y elevación (`radius.*`, `shadow.*`).]
+`surface.page.web`, `brand.primary`, `text.body`, `text.heading`, `accent.soft`,
+`radius.sm` (4 px) o `radius.md` (8 px) para contenedores, y `elevation.sm` solo si
+una elevación es imprescindible (default sin sombra). Ver
+`02_identidad-visual/forma-y-profundidad.md`.

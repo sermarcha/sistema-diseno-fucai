@@ -68,6 +68,8 @@ const GEN_TARGETS = [
   "02_identidad-visual/color.md",
   "02_identidad-visual/tipografia.md",
   "02_identidad-visual/espaciado-y-layout.md",
+  "02_identidad-visual/forma-y-profundidad.md",
+  "02_identidad-visual/movimiento.md",
   "06_accesibilidad/estandar-accesibilidad.md",
 ];
 const GEN_MARKER = "[GEN] derivado de tokens.json";

@@ -13,9 +13,43 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 ### Por hacer
 - Poblar `02_identidad-visual/iconos/` con los `.svg` y añadir el `.otf` de Space Grotesk.
 - Completar `scripts/build-skill.js` (compilador pleno: regenerar tablas [GEN] y empaquetar el `.skill`).
-- Tokenizar radios/sombras y movimiento (hoy [Pendiente]); las rampas de data-viz ya están tokenizadas (v1.2.0).
+- Tokenizar la grilla de columnas y los breakpoints responsive (web/AppSheet).
+- Resolver las decisiones de marca pendientes: posicionamiento formal, arquetipo,
+  personalidad (opcional) y la URL del repositorio. Color, forma y movimiento ya
+  están tokenizados (v1.2.0–v1.3.0).
 - Definir el posicionamiento formal y el arquetipo de marca (misión, visión y
   valores ya cargados en v1.1.0).
+
+## [1.3.0] — 2026-06-24
+
+Tokeniza **forma y movimiento** (web/AppSheet), resolviendo los `[Pendiente]` de
+`forma-y-profundidad.md`, `movimiento.md`, `web/boton.md` y `web/card.md`.
+
+### Añadido
+- Grupos en `03_tokens/tokens.json`:
+  - `radius.*` — `none` (0), `sm` (4 px, **radio de marca** del Manual §6.4),
+    `md` (8 px, contenedores).
+  - `elevation.sm` — única sombra sutil (gris `color.gris-linea`, sin color);
+    el default es **sin sombra**.
+  - `motion.duration.*` — `fast` (150 ms), `base` (250 ms); `motion.easing.*` —
+    `standard`/`in`/`out` (cubic-bezier).
+- Tablas `[GEN]` de radius, elevation, duration y easing en
+  `forma-y-profundidad.md` y `movimiento.md`; `build-skill.js` las detecta.
+
+### Cambiado
+- `web/boton.md` y `web/card.md` referencian `radius.*`, `elevation.sm` y `motion.*`
+  (antes `[Pendiente]`).
+- `espaciado-y-layout.md`: el radio deja de figurar como pendiente (ya tokenizado).
+
+### Nota
+- `radius.sm` (4 px) proviene del Manual §6.4; elevación y movimiento son defaults
+  minimalistas del sistema (el Manual no los define), coherentes con la filosofía
+  plana de FUCAI.
+
+### Verificado
+- Todas las referencias resuelven; los 4 temas conservan claves idénticas; las
+  tablas `[GEN]` coinciden con los tokens; los generadores corren y `check_fucai.py`
+  da PASS.
 
 ## [1.2.0] — 2026-06-24
 

@@ -6,17 +6,27 @@
 
 ## Forma (radios de borde)
 
-- **Botones: radio 4 px** (`skill/fucai-branding/references/web.md`). Esquinas levemente
-  redondeadas, nunca pastilla completa ni cuadrado duro.
-- Tarjetas/contenedores: redondeo sutil y consistente; mismo criterio que botones.
+Esquinas levemente redondeadas, nunca pastilla completa ni cuadrado duro. El radio
+de marca (`radius.sm` = 4 px) viene del Manual (§6.4) y aplica a botones y tarjetas.
+
+<!-- [GEN] derivado de tokens.json (radius.*) -->
+
+| Token | Valor | Uso |
+|-------|-------|-----|
+| `radius.none` | 0 px | Sin redondeo |
+| `radius.sm` | 4 px | **Radio de marca**: botones y tarjetas |
+| `radius.md` | 8 px | Contenedores grandes (opcional) |
 
 ## Profundidad (elevación)
 
-- **Mínima.** La jerarquía se logra con espacio en blanco y color de acento, no
-  con sombras (principios `01_fundamentos/principios-de-diseno.md`).
-- Si una sombra es imprescindible (p. ej. menú flotante en AppSheet): una sola
-  elevación sutil, gris de soporte, sin sombras de color.
+**Mínima.** La jerarquía se logra con espacio en blanco y color de acento, no con
+sombras (`01_fundamentos/principios-de-diseno.md`). El **default es SIN sombra**;
+solo si es imprescindible (p. ej. menú flotante en AppSheet) se usa una única
+elevación sutil, en gris de soporte, **nunca de color**.
 
-> [Pendiente: tokenizar radios (`radius.*`) y elevaciones (`shadow.*`) en
-> `03_tokens/tokens.json`. Hoy solo existe el valor de radio 4 px documentado en
-> el skill; conviene formalizarlo como token junto a 1–2 niveles de sombra.]
+<!-- [GEN] derivado de tokens.json (elevation.*) -->
+
+| Token | Sombra (color · offset Y · blur) | Uso |
+|-------|----------------------------------|-----|
+| (sin token) | ninguna | Default — superficies planas |
+| `elevation.sm` | `color.gris-linea` (#CCCCCC) · 1 px · 3 px | Única elevación permitida (flotantes) |
