@@ -20,6 +20,23 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 - Definir el posicionamiento formal y el arquetipo de marca (misión, visión y
   valores ya cargados en v1.1.0).
 
+## [1.6.0] — 2026-06-24
+
+### Cambiado
+- **`/DESIGN.md` ampliado** a 12 secciones con mayor nivel de detalle: índice;
+  misión/visión/valores en el contexto; **voz** con VJACel, registros por contexto
+  (email/informe/redes/web) y **microcopy** (CTA, enlaces, formularios, mensajes de
+  estado); **color** con combinaciones autorizadas y rampas de data-viz; tipografía
+  con escala de presentación; **logo** con cobranding; **componentes** de documento,
+  presentación, redes (estructuras A/B/C + tamaños) y AppSheet; accesibilidad con
+  foco/teclado/ARIA/movimiento; nuevas secciones de **fotografía e ilustración**,
+  **iconografía**, **temas (claro/oscuro) y submarcas** (con paleta de modo oscuro en
+  variables CSS) y **"cómo decidir en marca"** (arbitraje + reglas rápidas).
+
+### Verificado
+- Los 21 HEX citados coinciden con los primitivos de `tokens.json` (ninguno inventado).
+- 9 marcadores `[POR CONFIRMAR]`.
+
 ## [1.5.0] — 2026-06-24
 
 ### Añadido
