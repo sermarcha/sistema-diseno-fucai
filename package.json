@@ -6,13 +6,14 @@
   "license": "UNLICENSED",
   "author": "Fundación Caminos de Identidad (FUCAI) <comunicaciones@fucaicolombia.org>",
   "homepage": "https://www.fucaicolombia.org",
-  "type": "module",
   "scripts": {
     "build": "echo \"[build] pendiente de implementar en fases posteriores: resuelve 03_tokens/tokens.json -> scripts/generators/* -> dist/\" && exit 0",
-    "tokens:check": "node -e \"JSON.parse(require('fs').readFileSync('03_tokens/tokens.json','utf8')); console.log('tokens.json: JSON válido')\""
+    "tokens:check": "node -e \"JSON.parse(require('fs').readFileSync('03_tokens/tokens.json','utf8')); console.log('tokens.json: JSON válido')\"",
+    "build:skill": "node scripts/build-skill.js",
+    "qa:docx": "python3 scripts/check_fucai.py"
   },
   "dependencies": {
-    "docx": "^9.0.0"
-  },
-  "devDependencies": {}
+    "docx": "^9.7.1",
+    "pptxgenjs": "^4.0.1"
+  }
 }

@@ -11,13 +11,40 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 ## [No publicado]
 
 ### Por hacer
-- Poblar las capas 04 (componentes) y 07 (gobernanza) (fases 4–5).
 - Poblar `02_identidad-visual/iconos/` con los `.svg` y añadir el `.otf` de Space Grotesk.
-- Implementar los generadores en `scripts/generators/` y el comando `npm run build`.
+- Completar `scripts/build-skill.js` (compilador pleno: regenerar tablas [GEN] y empaquetar el `.skill`).
+- Tokenizar rampas de data-viz, radios/sombras y movimiento (hoy [Pendiente]).
 - Confirmar contra el Manual de Identidad los valores provisionales de la
   submarca Tienda FUCAI (terracota y ocre) en `03_tokens/temas/tienda-fucai.json`.
 - Resolver los marcadores `> [Pendiente: …]` de la capa estratégica (misión,
   visión, valores, arquetipo, posicionamiento formal) con dirección.
+
+## [0.4.0] — 2026-06-24
+
+### Añadido
+- **Componentes (`04_componentes/`)**: `catalogo.md` + fichas de `documento/`
+  (portada, banda-arena, pie-naranja, encabezado-acta, tabla-firmas,
+  divisor-capitulo), `presentacion/` (portada-titulo, slide-contenido),
+  `appsheet/patrones.md`, `social/` (post, story, carrusel) y `web/` (boton, card).
+  Las fichas de documento codifican las reglas técnicas críticas (fondo blanco,
+  bug `rId0`, 2 secciones, bandas en `Footer`, `lineRule:"atLeast"`, campos abiertos).
+- **Motor (`scripts/`)**: `lib/tokens.js` y `lib/tokens.py` (cargan y resuelven
+  `tokens.json`); generadores **reutilizados del skill y adaptados** para leer la
+  marca desde tokens (`fucai_docx.js`, `fucai_pptx.js`, `fucai_xlsx.py`,
+  `check_fucai.py`); `build-skill.js` (esqueleto documentado del compilador);
+  `scripts/README.md`.
+- **Gobernanza (`07_gobernanza/`)**: `modelo-de-gobernanza.md`, `versionado.md`,
+  `onboarding.md`, `mapa-fuente-de-verdad.md`.
+
+### Cambiado
+- `package.json`: CommonJS (se quitó `type: module`) para los generadores
+  reutilizados; nuevos scripts `build:skill` y `qa:docx`.
+- Eliminados los `.gitkeep` de `04_componentes/*`, `07_gobernanza/` y `scripts/*`.
+
+### Verificado
+- Los cuatro generadores corren tras la adaptación; `check_fucai.py` da PASS en
+  todas las reglas duras sobre un `.docx` de prueba (fondo blanco, sin `rId0`,
+  3 secciones, paleta y tipografías correctas). Ningún color/familia quedó quemado.
 
 ## [0.3.0] — 2026-06-24
 
