@@ -1,0 +1,42 @@
+name: QA Sistema de Diseño FUCAI
+
+# Verifica la integridad del sistema en cada cambio: tokens válidos, tablas [GEN]
+# en sincronía con los tokens, y que el compilador del skill corre.
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (con Git LFS)
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: |
+          npm install
+          pip install -r requirements.txt
+
+      - name: tokens.json es JSON válido
+        run: npm run tokens:check
+
+      - name: Verificar tablas [GEN] vs tokens (build-skill)
+        run: node scripts/build-skill.js
+
+      - name: Empaquetar skill (humo)
+        run: node scripts/build-skill.js --package

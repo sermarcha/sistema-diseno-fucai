@@ -112,3 +112,10 @@ cambian los valores. Permite reusar un mismo componente con distinta piel.
 3. Todos los temas comparten el mismo conjunto de claves.
 4. Cambiar un primitivo o una regla de scope es un cambio revisado por el
    Guardián de marca (ver `CONTRIBUTING.md`).
+
+## Tokens reservados (definidos, aún sin consumidor)
+
+Estos tokens existen para consumidores futuros y todavía no se referencian en
+documentos ni generadores; son válidos y parte del contrato (no son huecos):
+`accent.territorySoft`, `text.footer`, `docx.tableHeader.text`, `pptx.titleSlide.text`,
+`appsheet.accent`.

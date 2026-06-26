@@ -38,6 +38,16 @@ pluriétnica y multicultural.
 diferencial, con metodologías participativas y alianzas estratégicas para el
 desarrollo sostenible.
 
+**Concepto estratégico (posicionamiento):** *La identidad es el camino hacia la
+innovación, el bienestar y la sostenibilidad global.* **FUCAI es el puente entre
+mundos**: transforma la diversidad y la riqueza ancestral en herramientas para un
+mundo más justo, inclusivo y resiliente.
+
+**Personalidad de marca:** una persona sencilla y comprometida que combina la
+**sabiduría de alguien mayor con la frescura de alguien joven**; fuerte, valiente, con
+vocación de servicio; curiosa y detallista; voz inspiradora, clara y cercana. Conecta
+el mundo indígena y el occidental. (Detalle en `01_fundamentos/plataforma-de-marca.md`.)
+
 **Cinco principios de diseño** (el lente de toda decisión):
 
 1. **Minimalista** — un elemento focal por pieza, mucho aire, nada decorativo

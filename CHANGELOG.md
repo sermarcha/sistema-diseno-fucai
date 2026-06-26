@@ -10,15 +10,32 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 
 ## [No publicado]
 
+### Añadido (sin publicar)
+- **Contenido estratégico oficial** en `01_fundamentos/plataforma-de-marca.md`:
+  Personalidad de marca, Posicionamiento (Concepto Estratégico), Arquetipo (blend
+  Puente/Sabio-Cuidador-Explorador), Narrativa de marca, "Qué nos hace único",
+  "Nuestra lucha" y Pitch. Resuelve los `[Pendiente]` estratégicos de alta prioridad.
+- **`01_fundamentos/audiencias.md`** reescrito con los **3 grupos oficiales**
+  (comunidades+ciudadanía, socios estratégicos, marketing ético) con propuesta de
+  valor, beneficios y mensaje clave.
+- **`skill/naane-branding/`**: copiado al repo (antes solo se referenciaba; cierra la
+  dependencia ausente del co-branding CC217).
+- **`.github/workflows/ci.yml`**: CI que valida tokens.json, verifica las tablas
+  `[GEN]` (`build-skill`) y empaqueta el skill en cada push/PR.
+- `DESIGN.md`: añadidos concepto estratégico y personalidad en el contexto de marca.
+- `03_tokens/taxonomia.md`: documentados los tokens reservados (sin consumidor aún).
+- `07_gobernanza/analisis-de-vacios.md`: auditoría exhaustiva de vacíos.
+
 ### Por hacer
-- Poblar `02_identidad-visual/iconos/` con los `.svg` y añadir el `.otf` de Space Grotesk.
-- Automatizar la publicación del `.skill` por Releases/CI desde `dist/skill/` (el compilador ya empaqueta).
-- Tokenizar la grilla de columnas y los breakpoints responsive (web/AppSheet).
-- Resolver las decisiones de marca pendientes: posicionamiento formal, arquetipo,
-  personalidad (opcional) y la URL del repositorio. Color, forma y movimiento ya
-  están tokenizados (v1.2.0–v1.3.0).
-- Definir el posicionamiento formal y el arquetipo de marca (misión, visión y
-  valores ya cargados en v1.1.0).
+- Builders `actaHeader()`, `signatureTable()`, `chapterDivider()` en `fucai_docx.js`;
+  verificador de QA para `.pptx` y `.xlsx`.
+- Logo: versión monocromática, tamaño mínimo y formato SVG; poblar `iconos/` con `.svg`.
+- Definir colores de estado (éxito/error/alerta), H4–H6 + escala web (rem), grilla y
+  breakpoints responsive.
+- Confirmar el término "familias acompañadas" y alinear los textos oficiales
+  (narrativa/audiencias) al léxico ético; política de localización; `LICENSE`.
+- Automatizar la publicación del `.skill` por Releases; añadir la URL del repositorio
+  (canal de issues/PR) en gobernanza.
 
 ## [1.7.0] — 2026-06-24
 
