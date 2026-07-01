@@ -18,6 +18,8 @@
 | Voz, tono, léxico ético | `05_contenido-lenguaje/`, `01_fundamentos/voz-y-tono.md` |
 | Reglas de contraste y accesibilidad | `06_accesibilidad/` |
 | Piezas reutilizables y reglas técnicas | `04_componentes/` |
+| Reglas de marca para mapas (cartografía) | `04_componentes/cartografia/` |
+| Implementación cartográfica (estilos, gradientes, plantillas, KML) | repo externo **`fucai-geo`** → `qgis/sistema-diseno-mapas.md` |
 | Lógica de generación | `scripts/` |
 | Autoridad de marca de referencia (espejo) | `skill/fucai-branding/` |
 

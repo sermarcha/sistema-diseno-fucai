@@ -11,6 +11,11 @@ y el versionado es [Semántico](https://semver.org/lang/es/) (MAJOR.MINOR.PATCH)
 ## [No publicado]
 
 ### Añadido (sin publicar)
+- **`04_componentes/cartografia/`** (Borrador): componente que fija las reglas de marca
+  para mapas y **delega la implementación** cartográfica (estilos, gradientes por métrica,
+  plantillas de impresión, KML) al repo **`fucai-geo`** (`qgis/sistema-diseno-mapas.md`).
+  Lista las extensiones `carto.*` (agua, chagra, curva de nivel) candidatas a token de
+  marca. Registrado en `07_gobernanza/mapa-fuente-de-verdad.md`.
 - **Contenido estratégico oficial** en `01_fundamentos/plataforma-de-marca.md`:
   Personalidad de marca, Posicionamiento (Concepto Estratégico), Arquetipo (blend
   Puente/Sabio-Cuidador-Explorador), Narrativa de marca, "Qué nos hace único",
